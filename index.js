@@ -30,7 +30,7 @@ const palyerMove = (userMove) => {
   const computerMove = computerPickup();
   const resultElement = document.querySelector(".result");
   const movesElement = document.querySelector(".moves");
-  movesElement.innerHTML = `You <img src='/images/${userMove}-emoji.png' alt='${userMove}' class='move-icon'/> , <img src='/images/${computerMove}-emoji.png' alt='${computerMove}' class='move-icon'/> Computer`;
+  movesElement.innerHTML = `You <img src='./images/${userMove}-emoji.png' alt='${userMove}' class='move-icon'/> , <img src='./images/${computerMove}-emoji.png' alt='${computerMove}' class='move-icon'/> Computer`;
   if (userMove === computerMove) {
     resultElement.innerHTML = `Tie.`;
     score.ties += 1;
